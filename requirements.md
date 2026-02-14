@@ -1,4 +1,4 @@
-# Civora — Requirements Document
+# JanConnectAI— Requirements Document
 
 > **AI-Powered Community Access Platform**
 > Version 1.0 · February 2026
@@ -520,6 +520,6 @@ Response:
 
 ---
 
-> **Document Owner:** Civora Engineering Team
+> **Document Owner:** JanConnectAIEngineering Team
 > **Last Updated:** February 14, 2026
 > **Status:** Draft — Hackathon Submission
