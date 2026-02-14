@@ -1,4 +1,4 @@
-# Civora — System Design Document
+# JanConnectAI — System Design Document
 
 > **AI-Powered Community Opportunity Intelligence Platform**
 > Version 1.0 · February 2026
@@ -22,7 +22,7 @@
 
 ## 1. System Architecture Overview
 
-Civora follows a **layered architecture** with clear separation of concerns across four tiers. Each layer communicates through well-defined interfaces, enabling independent scaling, testing, and deployment.
+JanConnectAI follows a **layered architecture** with clear separation of concerns across four tiers. Each layer communicates through well-defined interfaces, enabling independent scaling, testing, and deployment.
 
 ### 1.1 Architecture Layers
 
@@ -399,7 +399,7 @@ jobs:
                       ┌──────▼───────────────────────────────────┐
                       │ PROMPT CONSTRUCTION                       │
                       │                                          │
-                      │ System: "You are Civora, an AI assistant │
+                      │ System: "You are , an AI assistant │
                       │ that helps Indian citizens find govt     │
                       │ schemes. Answer ONLY from the provided   │
                       │ context."                                │
@@ -985,7 +985,7 @@ Build structured prompt:
 
 ┌───────────────────────────────────────────────────────┐
 │  SYSTEM PROMPT                                        │
-│  "You are Civora, an AI assistant helping Indian      │
+│  "You are JanConnectAI, an AI assistant helping Indian      │
 │   citizens discover government opportunities.         │
 │   Answer ONLY based on the provided context.          │
 │   If unsure, say 'I don't have enough information.'"  │
@@ -1042,7 +1042,7 @@ Structured, grounded response with sources
 
 ```python
 RAG_PROMPT = """
-You are Civora, an AI assistant that helps Indian citizens discover and apply for
+You are JanConnectAI, an AI assistant that helps Indian citizens discover and apply for
 government schemes, scholarships, jobs, and welfare programs.
 
 RULES:
@@ -1260,7 +1260,7 @@ Full Service:       Vector Search → Ranking → RAG → AI Response
 | **Rate Limiting** | API abuse prevention | 100 requests/min per user; 10 queries/min for AI endpoints |
 | **Data Protection** | PII encryption | AES-256 encryption at rest for email, phone, income |
 | **Data Protection** | Minimal data collection | Only collect data necessary for personalization |
-| **API Security** | CORS | Whitelist: `civora.in`, `localhost:3000` |
+| **API Security** | CORS | Whitelist: `JanConnectAI.in`, `localhost:3000` |
 | **API Security** | Helmet/security headers | `X-Content-Type-Options`, `X-Frame-Options`, `CSP` |
 | **Secrets** | Key management | Environment variables; never in code; `.env` in `.gitignore` |
 | **Logging** | Audit trail | Log all admin actions, auth events, data modifications |
@@ -1325,6 +1325,6 @@ Full Service:       Vector Search → Ranking → RAG → AI Response
 
 ---
 
-> **Document Owner:** Civora Engineering Team
+> **Document Owner:** JanConnectAI Engineering Team
 > **Last Updated:** February 14, 2026
 > **Status:** Draft — Hackathon Submission
